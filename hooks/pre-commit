@@ -1,0 +1,6 @@
+#!/bin/sh
+# esse script testa se os arquivos podem ser compilados
+
+for name in ../*.c; do
+	gcc -Wall -Wextra -Werror -c "$name"
+done
