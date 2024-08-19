@@ -1,10 +1,9 @@
 size_t ft_strlen(char *str)
 {
-	int len = 0;
+	char* start = str;
 	while(*str)
 	{
-		len++
-		str++
+		str++;
 	}
-	return len;
+	return str - start;
 }
